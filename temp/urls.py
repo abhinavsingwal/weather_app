@@ -18,8 +18,10 @@ from django.urls import path
 from django.conf.urls import url
 from rest_framework.urlpatterns import format_suffix_patterns
 from TempApi import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^api/insert$',views.temperature),
 url(r'^api/geti$', views.geti),
+    url(r'',views.index),
 ]

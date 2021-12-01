@@ -11,6 +11,9 @@ import json
 import time
 from . import engine
 
+def index(request):
+    return render(request,'index.html')
+
 @api_view(['GET','POST'])
 def temperature(request):
     if request.method == 'POST':
